@@ -7,6 +7,7 @@ A sablon generált doksija, összesítve: projlab.pdf, a kommentezés (comment p
 
 # Fájlok
  * szotar.sh: szótár generáláshoz használandó, bővebben a dokumentációban!
+ * definitions.tex: a megírt környezetekhez/parancsokhoz (ltsd.: doksi) kellenek, ne nyúlj bele!!!!  
  * projlab.tex: a fődokumentum forrása
  * projlab.pdf: már kigenerált példa pdf
  * latexdoc/latexdoc.tex: dokumentáció forrása
