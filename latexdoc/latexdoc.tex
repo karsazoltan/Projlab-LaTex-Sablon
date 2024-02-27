@@ -196,6 +196,7 @@ Az osztály vagy interfész elemeinek megadására különböző környezeteket 
     \item $class-template-responsibility$ Az osztály felelősségének leírására szolgáló környezet
     \item $class-template-baseclass$ Az ősosztályok felsorolására használható, az öröklés reprezentálása a $baseclass$ paranccsal történik.
     \item $class-template-interface$ A megvalósított interfészek felsorolására
+    \item $class-template-association$ Az osztályhoz tartozó kapcsolatok/asszociációk felsorolása és leírása. A felsoroláshoz a $classitem$ parancs használható, mely két paramétert vár: az adattag típusa, neve, megkötések... valamint a hozzá tartozó leírást
     \item $class-template-attribute$ Az osztályban található attribútumok felsorolása és leírása. A felsoroláshoz a $classitem$ parancs használható, mely két paramétert vár: az adattag típusa, neve, megkötések... valamint a hozzá tartozó leírást
     \item $class-template-method$ Az osztályban megvalósuló függvények leírása, felsoroláshoz itt is a $classitem$ parancs kell.
     \item $class-template-statechart$ Ha szükséges, állapotgépek leírásához.
@@ -209,10 +210,14 @@ Egy példa néhány osztálykörnyezet és a $classitem$ parancs használatára
 \begin{class-template-baseclass}		
     Item \baseclass AutomaticItem
 \end{class-template-baseclass}
+\begin{class-template-association}
+    \classitem{-player: Player}{A tárgyat birtokló játékosra vonatkozó hivatkozás.}
+\end{class-template-association}
 \begin{class-template-method}
     \classitem{+fallInWater(p: Player): void}{Absztrakt, felülírható metódus, a ... }
 \end{class-template-method}
 \end{lstlisting}
+
 \subsection*{DivingSuit}
 \begin{class-template-responsibility}
     Absztrakt búvárruha osztály.
@@ -220,6 +225,9 @@ Egy példa néhány osztálykörnyezet és a $classitem$ parancs használatára
 \begin{class-template-baseclass}		
     Item \baseclass AutomaticItem
 \end{class-template-baseclass}
+\begin{class-template-association}
+    \classitem{-player: Player}{A tárgyat birtokló játékosra vonatkozó hivatkozás.}
+\end{class-template-association}
 \begin{class-template-method}
     \classitem{+fallInWater(p: Player): void}{Absztrakt, felülírható metódus, a játékos vízbe esésénél van szerepe.}
 \end{class-template-method}
