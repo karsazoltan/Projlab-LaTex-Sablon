@@ -28,11 +28,14 @@
     Megvalósított interfészek felsorolása
 \end{class-template-interface}
 \begin{class-template-baseclass}
-    Ős-Ősosztály \baseclass Ősosztály... 
+    Ős-Ősosztály \baseclass Ősosztály... láncolat
 \end{class-template-baseclass}
 \begin{class-template-attribute}
-    \classitem{+A [0..*]}{adattag A}
+    \classitem{+asszociáció A}{asszociáció jellemzése: ki a túloldali szereplő, mi a kapcsolat célja}
 \end{class-template-attribute}
+\begin{class-template-association}
+    \classitem{+A [0..*]}{adattag A}
+\end{class-template-association}
 \comment{Milyen publikus, protected és privát  metódusokkal rendelkezik. Metódusonként egy-három mondat arról, hogy mit csinál.}
 \begin{class-template-method}
     \classitem{+B(A a) : void}{metódus B}
